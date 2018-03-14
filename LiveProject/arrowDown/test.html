@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>  
+<html>  
+<head>  
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">  
+
+<link rel="stylesheet" id="font-awesome-css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" type="text/css" media="screen">
+ 
+
+<!-- 
+<style type="text/css">  
+    .fa_custom {  
+    color: #0099CC  
+    }  
+    </style> 
+-->
+
+
+<style>
+.scroll-top-wrapper {
+    position: fixed;
+	opacity: 0;
+	visibility: hidden;
+	overflow: hidden;
+	text-align: center;
+	z-index: 99999999;
+    background-color: #777777;
+	color: #eeeeee;
+	width: 50px;
+	height: 48px;
+	line-height: 48px;
+	right: 30px;
+	bottom: 30px;
+	padding-top: 2px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+.scroll-top-wrapper:hover {
+	background-color: #888888;
+}
+.scroll-top-wrapper.show {
+    visibility:visible;
+    cursor:pointer;
+	opacity: 1.0;
+}
+.scroll-top-wrapper i.fa {
+	line-height: inherit;
+}
+ 
+</style>
+
+</head>
+
+<header><i class="fa fa-angle-down" style="font-size:72px; color:red"></i></header>
+
+
+<body>  
+ <!--  
+<i class="fa fa-angle-down" style=aria-hidden="true"></i>
+ -->
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+<p>test something</p>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p>test something</p>
+<!--
+<i class="fa fa-angle-down fa_custom"></i>  
+<i class="fa fa-angle-down fa_custom fa-2x"></i>  
+<i class="fa fa-angle-down fa_custom fa-3x"></i>  
+<i class="fa fa-angle-down fa_custom fa-4x"></i> 
+-->
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p>test something</p>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p>test something</p>
+
+
+2
+3
+4
+5
+<div class="scroll-top-wrapper ">
+	<span class="scroll-top-inner">
+		<i class="fa fa-angle-down" style="font-size:72px; color:red"></i>
+	</span>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p>test something</p>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p>test something</p>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p>test something</p>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+
+$(function(){
+ 
+ $(document).on( 'scroll', function(){
+
+     if ($(window).scrollTop() > 100) {
+         $('.scroll-top-wrapper').addClass('show');
+     } else {
+         $('.scroll-top-wrapper').removeClass('show');
+     }
+ });
+});
+
+</script>
+
+</body>  
+</html> 

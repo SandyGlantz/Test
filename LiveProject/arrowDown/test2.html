@@ -1,0 +1,103 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">  
+
+<link rel="stylesheet" id="font-awesome-css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" type="text/css" media="screen">
+
+
+
+
+<style>
+
+#arrowholder {
+  position: fixed;
+  left: 0;
+  right: 0;
+  text-align: center;
+  bottom: 0;
+}
+.scroll {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 90%;
+  position: absolute;
+  bottom: 50px;
+  left: 53%;
+  transform: translate(-53%);
+}
+#up {
+  opacity: 0
+}
+#up,
+#down {
+  position: absolute;
+  left: 50%;
+  bottom: 0
+}
+
+</style>
+
+</head>
+
+
+
+<Body>
+        <div id="arrowholder">
+            <!-- text added to down arrow
+                <div class="scroll">SCROLL</div>
+            -->
+                <div class="scroll"></div>
+                <i id="down" class="fa fa-4x fa-angle-down"></i>
+            </div> 
+
+
+
+            
+<p>Say something here and say it some more to fill the space.  Random words and whatnot can go here ... just whatever is on your mind at the time will work.</p><br/>
+<p>Say something here and say it some more to fill the space.  Random words and whatnot can go here ... just whatever is on your mind at the time will work.</p><br/>
+<p>Say something here and say it some more to fill the space.  Random words and whatnot can go here ... just whatever is on your mind at the time will work.</p><br/>
+<p>Say something here and say it some more to fill the space.  Random words and whatnot can go here ... just whatever is on your mind at the time will work.</p><br/>
+<p>Say something here and say it some more to fill the space.  Random words and whatnot can go here ... just whatever is on your mind at the time will work.</p><br/>
+<p>Say something here and say it some more to fill the space.  Random words and whatnot can go here ... just whatever is on your mind at the time will work.</p><br/>
+<p>Say something here and say it some more to fill the space.  Random words and whatnot can go here ... just whatever is on your mind at the time will work.</p><br/>
+<p>Say something here and say it some more to fill the space.  Random words and whatnot can go here ... just whatever is on your mind at the time will work.</p><br/>
+<p>Say something here and say it some more to fill the space.  Random words and whatnot can go here ... just whatever is on your mind at the time will work.</p><br/>
+<p>Say something here and say it some more to fill the space.  Random words and whatnot can go here ... just whatever is on your mind at the time will work.</p><br/>
+
+
+
+
+
+
+<script>
+    src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+
+    $(window).scroll(function() {
+  if ($(window).scrollTop() + $(window).height() > $(document).height() - 100) {
+    $("#down").animate({
+      opacity: 0
+    }, 100);
+    $("#up").animate({
+      opacity: 1
+    }, 100);
+  }
+  //var scrollTop = $(this).scrollTop();
+  //console.log(scrollTop);
+  var topDistance = $('#up').offset().top;
+  if (topDistance <= $(window).height()) {
+    $("#down").animate({
+      opacity: 1
+    }, 100);
+    $("#up").animate({
+      opacity: 0
+    }, 100);
+
+  }
+});
+
+</script>  
+
+</Body>
+</html>
